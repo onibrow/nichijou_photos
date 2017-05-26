@@ -13,3 +13,5 @@ Next, to generate the tweet, I followed documentation on the twurl page. I scrap
 The entire process is then wrapped in a loop waiting for a GPIO.IN from a button using the RPI GPIO library. I have a cron job set up so it runs this at start, so that it works plug 'n play.
 
 A subtle work around was made when I had to execute `sudo python nichijou.py` as root, but twurl was only set up for the user, so I had to make sure those commands were executed explicitly from the user.
+
+Button: Pin 12, 14
